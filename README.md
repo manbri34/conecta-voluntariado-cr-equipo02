@@ -12,4 +12,5 @@ La documentación del proyecto se mantiene en docs/
 nota: agregar una linea extra para completar pasos de la guia
 nota: readme actualizado para generar capturas.
 
+creando conflicto B
 modificando paso 10 - modificando conflicto A
