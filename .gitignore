@@ -1,0 +1,15 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Dependencias
+node_modules/
+
+# Variables sensibles
+.env
+
+# Logs
+*.log
