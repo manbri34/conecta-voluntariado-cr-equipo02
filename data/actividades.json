@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre": "Alfabetización digital",
+        "categoria": "Educación",
+        "fecha": "2026-10-24",
+        "ubicacion": "Puntarenas",
+        "cuposDisponibles": 15,
+        "activa": true
+    },
+    {
+        "id": 2,
+        "nombre": "Feria de adopción",
+        "categoria": "Animal",
+        "fecha": "2026-10-31",
+        "ubicacion": "Cartago",
+        "cuposDisponibles": 20,
+        "activa": true
+    },
+    {
+        "id": 3,
+        "nombre": "Apoyo Educativo Infantil",
+        "categoria": "Educación",
+        "fecha": "2026-11-07",
+        "ubicacion": "San José",
+        "cuposDisponibles": 8,
+        "activa": true
+    },
+    {
+        "id": 4,
+        "nombre": "Acompañamiento a adultos mayores",
+        "categoria": "Apoyo comunitario",
+        "fecha": "2026-11-15",
+        "ubicacion": "Heredia",
+        "cuposDisponibles": 0,
+        "activa": true
+    },
+    {
+        "id": 5,
+        "nombre": "Campaña de reciclaje",
+        "categoria": "Ambiente",
+        "fecha": "2026-11-23",
+        "ubicacion": "Alajuela",
+        "cuposDisponibles": 12,
+        "activa": false
+    },
+    {
+        "id": 6,
+        "nombre": "Organización de bibliotecas",
+        "categoria": "Educación",
+        "fecha": "2026-12-02",
+        "ubicacion": "San José",
+        "cuposDisponibles": 10,
+        "activa": false
+    },
+    {
+        "id": 7,
+        "nombre": "Taller de seguridad digital",
+        "categoria": "Educación",
+        "fecha": "2026-12-10",
+        "ubicacion": "San José",
+        "cuposDisponibles": 5,
+        "activa": true
+    }
+]
