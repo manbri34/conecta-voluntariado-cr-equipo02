@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaCR - Panel de Inicio</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- 1. MENÚ LATERAL PRINCIPAL  -->
+    <aside class="menu-lateral">
+        <!-- Parte superior: Logo -->
+        <a href="indexconecta.html" class="logo">ConectaCR</a>
+
+        <!-- Parte media: Navegación -->
+        <div class="menu-lateral-body">
+            <p class="seccion-tag">ESPACIO VOLUNTARIO</p>
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="oportunidades.html">Oportunidades</a></li>
+                    <li><a href="solicitudes.html">Mis solicitudes</a></li>
+                    <li><a href="horas.html">Mis horas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Parte inferior: Tarjeta de Organización y Salida -->
+        <div class="menu-lateral-footer">
+            <div class="tarjeta-organizacion">
+                <p><strong>¿Representas una organización?</strong></p>
+                <p>Conoce el panel de coordinación</p>
+                <a href="organizaciones.html" class="link-flecha">→</a>
+            </div>
+
+            <a href="login.html" class="logout">
+                <span class="icono-salir">🚪</span> Cerrar sesión
+            </a>
+        </div>
+    </aside>
+
+    <!-- CONTENEDOR DERECHO (Agrupa la barra superior, el contenido y el pie de página) -->
+    <div class="contenedor-derecho">
+
+        <!-- 2. BARRA SUPERIOR (Cabecera de usuario) -->
+        <header class="barra-usuario">
+            <div class="perfil-usuario">
+                <span class="avatar">VS</span>
+                <div class="usuario-info">
+                    <p class="nombre">Valeria Soto</p>
+                    <p class="rol">Voluntaria</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 3. EL CONTENIDO PRINCIPAL DE LA PÁGINA -->
+        <main class="main">
+
+            <!-- SECCIÓN 1: Bienvenida e impacto actual -->
+            <section class="seccion-bienvenida">
+                <div class="bienvenida-texto">
+                    <span class="tagline">TU IMPACTO EMPIEZA AQUÍ</span>
+                    <h1>Buenos días, Valeria.</h1>
+                    <p>Hay nuevas formas de sumar a tu comunidad. Encuentra una causa y empieza a hacer la diferencia.
+                    </p>
+                    <a href="oportunidades.html" class="btn-explorar">Explorar oportunidades</a>
+                </div>
+
+                <!-- Tarjeta verde de horas acumuladas -->
+                <div class="tarjeta-horas">
+                    <p>TU APORTE EN 2026</p>
+                    <h2>24h</h2>
+                    <p>Meta personal: 40h (60%)</p>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: Oportunidades destacadas (Tarjetas con fotos de las playas) -->
+            <section class="seccion-oportunidades">
+                <div class="seccion-header">
+                    <div>
+                        <span class="tagline">CERCA DE TI</span>
+                        <h2>Oportunidades destacadas</h2>
+                    </div>
+                    <a href="oportunidades.html" class="ver-todas">Ver todas →</a>
+                </div>
+
+                <div class="grid-oportunidades">
+                    <!-- Tarjeta 1 -->
+                    <article class="tarjeta-oportunidad">
+
+                        <!-- Contenedor 1: Bloque de la Imagen (Arriba) -->
+                        <div class="tarjeta-imagen-wrapper">
+                            <img src="img/manglar-marviva.jpg" alt="Playa y vegetación en Puntarenas">
+                            <!-- La etiqueta flota únicamente sobre la imagen -->
+                            <span class="categoria-badge">AMBIENTE</span>
+                        </div>
+
+                        <!-- Contenedor 2: Bloque de Información (Abajo) -->
+                        <div class="tarjeta-info-wrapper">
+                            <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
+                            <h3 class="actividad-titulo">Restauración del manglar</h3>
+
+                            <!-- Detalles intermedios (Ubicación y Fecha) -->
+                            <div class="actividad-detalles-meta">
+                                <p class="detalle-item"><span class="icono">📍</span> Puntarenas</p>
+                                <p class="detalle-item"><span class="icono">📅</span> 18 oct, 7:00 a. m.</p>
+                            </div>
+
+                            <hr class="linea-divisoria">
+
+                            <!-- Fila inferior (Cupos y Enlace de acción) -->
+                            <div class="tarjeta-footer-fila">
+                                <span class="cupos-info"><span class="icono">👥</span> 8 cupos</span>
+                                <a href="detalles-actividad.html" class="link-ver-actividad">Ver actividad →</a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="tarjeta-oportunidad">
+
+                        <!-- Contenedor 1: Bloque de la Imagen (Arriba) -->
+                        <div class="tarjeta-imagen-wrapper">
+                            <img src="img/manglar-marviva.jpg" alt="Playa y vegetación en Puntarenas">
+                            <!-- La etiqueta flota únicamente sobre la imagen -->
+                            <span class="categoria-badge">AMBIENTE</span>
+                        </div>
+
+                        <!-- Contenedor 2: Bloque de Información (Abajo) -->
+                        <div class="tarjeta-info-wrapper">
+                            <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
+                            <h3 class="actividad-titulo">Restauración del manglar</h3>
+
+                            <!-- Detalles intermedios (Ubicación y Fecha) -->
+                            <div class="actividad-detalles-meta">
+                                <p class="detalle-item"><span class="icono">📍</span> Puntarenas</p>
+                                <p class="detalle-item"><span class="icono">📅</span> 18 oct, 7:00 a. m.</p>
+                            </div>
+
+                            <hr class="linea-divisoria">
+
+                            <!-- Fila inferior (Cupos y Enlace de acción) -->
+                            <div class="tarjeta-footer-fila">
+                                <span class="cupos-info"><span class="icono">👥</span> 8 cupos</span>
+                                <a href="detalles-actividad.html" class="link-ver-actividad">Ver actividad →</a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="tarjeta-oportunidad">
+
+                        <!-- Contenedor 1: Bloque de la Imagen (Arriba) -->
+                        <div class="tarjeta-imagen-wrapper">
+                            <img src="img/manglar-marviva.jpg" alt="Playa y vegetación en Puntarenas">
+                            <!-- La etiqueta flota únicamente sobre la imagen -->
+                            <span class="categoria-badge">AMBIENTE</span>
+                        </div>
+
+                        <!-- Contenedor 2: Bloque de Información (Abajo) -->
+                        <div class="tarjeta-info-wrapper">
+                            <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
+                            <h3 class="actividad-titulo">Restauración del manglar</h3>
+
+                            <!-- Detalles intermedios (Ubicación y Fecha) -->
+                            <div class="actividad-detalles-meta">
+                                <p class="detalle-item"><span class="icono">📍</span> Puntarenas</p>
+                                <p class="detalle-item"><span class="icono">📅</span> 18 oct, 7:00 a. m.</p>
+                            </div>
+
+                            <hr class="linea-divisoria">
+
+                            <!-- Fila inferior (Cupos y Enlace de acción) -->
+                            <div class="tarjeta-footer-fila">
+                                <span class="cupos-info"><span class="icono">👥</span> 8 cupos</span>
+                                <a href="detalles-actividad.html" class="link-ver-actividad">Ver actividad →</a>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: Próxima Actividad -->
+            <section class="seccion-proxima-actividad">
+                <div class="tarjeta-actividad">
+                    <!-- Icono de check verde -->
+                    <div class="actividad-icono">
+                        <span class="check-mark">✓</span>
+                    </div>
+
+                    <!-- Detalles de la actividad -->
+                    <div class="actividad-info">
+                        <span class="tagline">PRÓXIMA ACTIVIDAD</span>
+                        <h2>Clasificación de donaciones</h2>
+                        <p>Banco de Alimentos · Sáb 11 oct · 9:00 a. m.</p>
+                    </div>
+
+                    <!-- Estado y botón -->
+                    <div class="actividad-estado">
+                        <span class="badge-aprobada">APROBADA</span>
+                        <a href="#" class="btn-detalles">Ver detalles</a>
+                    </div>
+                </div>
+            </section>
+
+        </main> <!-- FIN DEL MAIN -->
+
+        <!-- 4. PIE DE PÁGINA (Cierre global del sitio) -->
+        <footer class="pie-pagina">
+            <div class="footer-marca">
+                <span class="footer-logo-texto">ConectaCR</span>
+            </div>
+            <p class="footer-descripcion">Diseñado para conectar personas con causas que transforman Costa Rica.</p>
+        </footer>
+
+    </div> <!-- FIN CONTENEDOR DERECHO -->
+
+</body>
+
+</html>
