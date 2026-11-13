@@ -7,6 +7,7 @@
     <meta name="description" content="Panel de inicio de ConectaCR">
     <title>ConectaCR - Panel de Inicio</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/indexconecta.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
 
         <nav class="nav-principal" aria-label="Menú principal">
             <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="indexconecta.html" class="active">Inicio</a></li>
                 <li><a href="actividades.html">Actividades</a></li>
                 <li><a href="inscripcion.html">Inscripciones</a></li>
             </ul>
@@ -58,89 +59,14 @@
 
             <div class="seccion-header">
                 <div>
-                    <span class="tagline">CERCA DE TI</span>
+                    <span class="tagline">PARA EMPEZAR</span>
                     <h2>Oportunidades destacadas</h2>
                 </div>
                 <a href="actividades.html" class="ver-todas">Ver todas →</a>
             </div>
 
-            <div class="grid-actividades">
-
-
-                <article class="tarjeta-actividad">
-                    <div class="tarjeta-imagen-wrapper">
-                        <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                        <span class="categoria-badge">AMBIENTE</span>
-                    </div>
-
-                    <div class="tarjeta-info-wrapper">
-                        <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                        <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                        <div class="actividad-detalles-meta">
-                            <p class="detalle-item">Puntarenas</p>
-                            <p class="detalle-item">18 oct, 7:00 a. m.</p>
-                        </div>
-
-                        <hr class="linea-divisoria">
-
-                        <div class="tarjeta-footer-fila">
-                            <span class="cupos-info"> 8 cupos</span>
-                            <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="tarjeta-actividad">
-                    <div class="tarjeta-imagen-wrapper">
-                        <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                        <span class="categoria-badge">AMBIENTE</span>
-                    </div>
-
-                    <div class="tarjeta-info-wrapper">
-                        <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                        <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                        <div class="actividad-detalles-meta">
-                            <p class="detalle-item"> Puntarenas</p>
-                            <p class="detalle-item"> 18 oct, 7:00 a. m.</p>
-                        </div>
-
-                        <hr class="linea-divisoria">
-
-                        <div class="tarjeta-footer-fila">
-                            <span class="cupos-info"> 8 cupos</span>
-                            <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="tarjeta-actividad">
-                    <div class="tarjeta-imagen-wrapper">
-                        <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                        <span class="categoria-badge">AMBIENTE</span>
-                    </div>
-
-                    <div class="tarjeta-info-wrapper">
-                        <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                        <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                        <div class="actividad-detalles-meta">
-                            <p class="detalle-item"> Puntarenas</p>
-                            <p class="detalle-item"> 18 oct, 7:00 a. m.</p>
-                        </div>
-
-                        <hr class="linea-divisoria">
-
-                        <div class="tarjeta-footer-fila">
-                            <span class="cupos-info"> 8 cupos</span>
-                            <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                        </div>
-                    </div>
-                </article>
-
+            <div id="grid-destacadas" class="grid-actividades">
+                <!-- Las tarjetas se generan desde indexconecta.js -->
             </div>
         </section>
 

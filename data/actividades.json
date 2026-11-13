@@ -3,7 +3,7 @@
         "id": 1,
         "nombre": "Alfabetización digital",
         "categoria": "Educación",
-        "fecha": "2026-10-24",
+        "fecha": "2026-11-24",
         "ubicacion": "Puntarenas",
         "cuposDisponibles": 15,
         "activa": true
@@ -12,7 +12,7 @@
         "id": 2,
         "nombre": "Feria de adopción",
         "categoria": "Animal",
-        "fecha": "2026-10-31",
+        "fecha": "2026-12-31",
         "ubicacion": "Cartago",
         "cuposDisponibles": 20,
         "activa": true
@@ -21,7 +21,7 @@
         "id": 3,
         "nombre": "Apoyo Educativo Infantil",
         "categoria": "Educación",
-        "fecha": "2026-11-07",
+        "fecha": "2027-01-07",
         "ubicacion": "San José",
         "cuposDisponibles": 8,
         "activa": true
@@ -30,7 +30,7 @@
         "id": 4,
         "nombre": "Acompañamiento a adultos mayores",
         "categoria": "Apoyo comunitario",
-        "fecha": "2026-11-15",
+        "fecha": "2026-12-31",
         "ubicacion": "Heredia",
         "cuposDisponibles": 0,
         "activa": true
@@ -61,5 +61,14 @@
         "ubicacion": "San José",
         "cuposDisponibles": 5,
         "activa": true
+    },
+    {
+        "id": 8,
+        "nombre": "Limpieza de playa",
+        "categoria": "Ambiente",
+        "fecha": "2025-11-15",
+        "ubicacion": "Limón",
+        "cuposDisponibles": 0,
+        "activa": false
     }
 ]
