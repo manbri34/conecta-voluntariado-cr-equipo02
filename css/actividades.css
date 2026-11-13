@@ -1,0 +1,197 @@
+/* =========================================
+   1. CONTENIDO PRINCIPAL
+========================================= */
+
+.contenido-principal {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 42px 35px;
+    min-height: 70vh;
+}
+
+/* =========================================
+   2. ENCABEZADO DE ACTIVIDADES
+========================================= */
+
+.explorar-header {
+    margin-bottom: 30px;
+}
+
+.explorar-header .tagline {
+    display: block;
+    color: #379059;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.explorar-header h1 {
+    color: #bbe7d4;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.explorar-header p {
+    color: #c9d8d0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =========================================
+   3. BARRA DE FILTROS
+========================================= */
+
+.barra-filtros {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.btn-filtro {
+    background-color: #ffffff;
+    color: #568267;
+    border: 1px solid #dce8df;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-filtro:hover {
+    background-color: #e8efe4;
+    color: #285b45;
+}
+
+.btn-filtro.active {
+    background-color: #285b45;
+    color: #ffffff;
+    border-color: #285b45;
+}
+
+/* =========================================
+   4. DISTRIBUCIÓN DE ACTIVIDADES
+========================================= */
+
+.malla-actividades {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+/* =========================================
+   5. TARJETAS DE ACTIVIDADES
+========================================= */
+
+.tarjeta-actividad {
+    background-color: #ffffff;
+    border-radius: 13px;
+    overflow: hidden;
+    border: 1px solid #e8eee9;
+    transition: 0.3s;
+}
+
+.tarjeta-actividad:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagen de la actividad */
+
+.tarjeta-imagen-wrapper {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+}
+
+.tarjeta-imagen-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Categoría */
+
+.categoria-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: #e8efe4;
+    color: #285b45;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Información de la actividad */
+
+.tarjeta-info-wrapper {
+    padding: 20px;
+}
+
+.organizacion-nombre {
+    color: #568267;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.actividad-titulo {
+    color: #26352e;
+    font-size: 18px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+
+.actividad-detalles-meta {
+    margin-bottom: 15px;
+}
+
+.detalle-item {
+    color: #718078;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+/* Línea divisoria */
+
+.linea-divisoria {
+    border: none;
+    border-top: 1px solid #e8eee9;
+    margin: 15px 0;
+}
+
+/* Parte inferior de la tarjeta */
+
+.tarjeta-footer-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.cupos-info {
+    color: #718078;
+    font-size: 12px;
+}
+
+.link-ver-actividad {
+    color: #568267;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.link-ver-actividad:hover {
+    color: #285b45;
+    text-decoration: underline;
+}

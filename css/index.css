@@ -5,168 +5,101 @@
 * {
     margin: 0;
     padding: 0;
-    margin-bottom: 25px;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f7f5;
-    color: #26352e;
+    background-color: #021840;
+    color: #0f9c5f;
+    line-height: 1.5;
 }
 
 /* =========================================
-   2. MENÚ LATERAL
+   2. ENCABEZADO Y MENÚ SUPERIOR
 ========================================= */
 
-.menu-lateral {
-    width: 250px;
-    height: 100vh;
-    background-color: #164e3b;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
+.encabezado-principal {
+    width: 100%;
+    min-height: 82px;
+    background-color: #ffffff;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    padding: 30px 20px;
+    gap: 25px;
+    padding: 15px 5%;
+    border-bottom: 1px solid #f6f7f6;
+    box-shadow: 0 3px 12px rgba(38, 53, 46, 0.04);
 }
 
 .logo {
-    color: white;
+    color: #0f9c5f;
     text-decoration: none;
     font-size: 27px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-.menu-lateral-body {
-    margin-top: 45px;
-    flex-grow: 1;
-}
-
-.seccion-tag {
-    color: #a8c9b8;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .nav-principal ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .nav-principal li {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .nav-principal a {
     display: block;
-    color: #d7e7de;
+    color: #023b19;
     text-decoration: none;
-    padding: 13px 15px;
+    padding: 10px 13px;
     border-radius: 8px;
     font-size: 14px;
     transition: 0.3s;
 }
 
 .nav-principal a:hover {
-    background-color: #28664f;
-    color: white;
+    background-color: #bff5a0;
+    color: #279c69;
 }
 
 .nav-principal a.active {
-    background-color: #dceee3;
-    color: #164e3b;
+    background-color: #e8efe4;
+    color: #285b45;
     font-weight: bold;
 }
 
-/* Tarjeta de organización */
-
-.tarjeta-organizacion {
-    background-color: #28664f;
-    padding: 17px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-}
-
-.tarjeta-organizacion p {
-    font-size: 13px;
-    margin-bottom: 8px;
-    line-height: 1.5;
-}
-
-.tarjeta-organizacion a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-/* Cerrar sesión */
-
-.logout {
-    display: block;
-    color: #d7e7de;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 10px;
-}
-
-.logout:hover {
-    color: white;
-}
-
-.icono-salir {
-    margin-right: 8px;
-}
-
-/* =========================================
-   3. CONTENEDOR DERECHO
-========================================= */
-
-.contenedor-derecho {
-    margin-left: 250px;
-    min-height: 100vh;
+.encabezado-usuario {
     display: flex;
-    flex-direction: column;
-}
-
-/* =========================================
-   4. BARRA SUPERIOR
-========================================= */
-
-.barra-usuario {
-    height: 85px;
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 0 45px;
-    border-bottom: 1px solid #e5ebe7;
+    gap: 22px;
 }
 
 .perfil-usuario {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .avatar {
-    width: 43px;
-    height: 43px;
-    background-color: #dceee3;
-    color: #164e3b;
+    width: 42px;
+    height: 42px;
+    background-color: #0b6bd1;
+    color: #d3dbd8;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    flex-shrink: 0;
 }
 
 .usuario-info p {
-    margin-bottom: 4px;
+    margin: 0;
 }
 
 .nombre {
@@ -179,23 +112,33 @@ body {
     color: #78877e;
 }
 
+.logout {
+    color: #718078;
+    text-decoration: none;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.logout:hover {
+    color: #b45b4d;
+}
+
 /* =========================================
-   5. CONTENIDO PRINCIPAL
+   3. CONTENIDO PRINCIPAL
 ========================================= */
 
 .main {
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
-    padding: 40px 45px;
-    flex: 1;
+    padding: 42px 35px;
 }
 
 /* Textos pequeños verdes */
 
 .tagline {
     display: block;
-    color: #36815c;
+    color: #379059;
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -203,102 +146,87 @@ body {
 }
 
 /* =========================================
-   6. SECCIÓN DE BIENVENIDA
+   4. SECCIÓN DE BIENVENIDA
 ========================================= */
 
 .seccion-bienvenida {
-    background-color: white;
-    border-radius: 14px;
-    padding: 35px;
+    background: linear-gradient(120deg, #ffffff 65%, #e8efe4 100%);
+    border: 1px solid #e8eee9;
+    border-radius: 16px;
+    padding: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
-    margin-bottom: 45px;
+    gap: 30px;
+    margin-bottom: 48px;
 }
 
 .bienvenida-texto {
-    max-width: 600px;
+    max-width: 620px;
 }
 
 .bienvenida-texto h1 {
     font-size: 32px;
-    color: #622d2f;
-    margin-bottom: 15px;
+    color: #48896d;
+    margin-bottom: 13px;
 }
 
 .bienvenida-texto p {
     color: #718078;
     font-size: 15px;
     line-height: 1.7;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
-
-/* Botón explorar */
 
 .btn-explorar {
     display: inline-block;
-    background-color: #23734e;
+    background-color: #285b45;
     color: white;
     text-decoration: none;
     padding: 13px 22px;
-    border-radius: 7px;
+    border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .btn-explorar:hover {
-    background-color: #164e3b;
+    background-color: #1d4534;
+    transform: translateY(-2px);
 }
 
-/* Tarjeta de horas */
-
-.tarjeta-horas {
-    background-color: #164e3b;
-    color: white;
-    min-width: 190px;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.tarjeta-horas p {
-    font-size: 12px;
-    margin-bottom: 12px;
-    color: #d7e7de;
-}
-
-.tarjeta-horas h2 {
-    font-size: 45px;
-    margin-bottom: 10px;
-}
 
 /* =========================================
-   7. SECCIÓN DE OPORTUNIDADES
+   5. SECCIÓN DE OPORTUNIDADES
 ========================================= */
 
 .seccion-oportunidades {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .seccion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    gap: 15px;
+    margin-bottom: 23px;
+}
+
+.seccion-header .tagline {
+    margin-bottom: 5px;
 }
 
 .seccion-header h2 {
     font-size: 25px;
-    color: #164e3b;
+    color: #d8efe5;
 }
 
 .ver-todas {
-    color: #23734e;
+    color: #bdedcf;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .ver-todas:hover {
@@ -307,26 +235,26 @@ body {
 
 /* Distribución de tarjetas */
 
-.grid-oportunidades {
+.grid-actividades {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 200px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
 }
 
 /* =========================================
-   8. TARJETAS DE OPORTUNIDADES
+   6. TARJETAS DE OPORTUNIDADES
 ========================================= */
 
-.tarjeta-oportunidad {
+.tarjeta-actividad {
     background-color: white;
-    border-radius: 12px;
+    border-radius: 13px;
     overflow: hidden;
     border: 1px solid #e8eee9;
     transition: 0.3s;
 }
 
-.tarjeta-oportunidad:hover {
-    transform: translateY(-5px);
+.tarjeta-actividad:hover {
+    transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -335,22 +263,24 @@ body {
 .tarjeta-imagen-wrapper {
     position: relative;
     height: 180px;
+    overflow: hidden;
 }
 
 .tarjeta-imagen-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 /* Etiqueta de categoría */
 
 .categoria-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: #dceee3;
-    color: #164e3b;
+    top: 14px;
+    left: 14px;
+    background-color: #e8efe4;
+    color: #285b45;
     padding: 7px 12px;
     border-radius: 20px;
     font-size: 10px;
@@ -364,7 +294,7 @@ body {
 }
 
 .organizacion-nombre {
-    color: #36815c;
+    color: #568267;
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -373,11 +303,9 @@ body {
 .actividad-titulo {
     color: #26352e;
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: 9px;
     margin-bottom: 15px;
 }
-
-/* Ubicación y fecha */
 
 .actividad-detalles-meta {
     margin-bottom: 15px;
@@ -386,7 +314,7 @@ body {
 .detalle-item {
     color: #718078;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .icono {
@@ -416,10 +344,11 @@ body {
 }
 
 .link-ver-actividad {
-    color: #23734e;
+    color: #568267;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .link-ver-actividad:hover {
@@ -427,24 +356,23 @@ body {
 }
 
 /* =========================================
-   9. PRÓXIMA ACTIVIDAD
+   7. PRÓXIMA ACTIVIDAD
 ========================================= */
 
 .seccion-proxima-actividad {
     margin-bottom: 30px;
 }
 
-.tarjeta-actividad {
+.tarjeta-actividad-proxima {
     background-color: white;
     border: 1px solid #e8eee9;
-    border-radius: 12px;
+    border-radius: 13px;
     padding: 25px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
-
-/* Información */
 
 .actividad-info {
     flex: 1;
@@ -456,7 +384,7 @@ body {
 
 .actividad-info h2 {
     font-size: 18px;
-    color: #164e3b;
+    color: #285b45;
     margin-bottom: 8px;
 }
 
@@ -465,8 +393,6 @@ body {
     font-size: 13px;
 }
 
-/* Estado y botón */
-
 .actividad-estado {
     display: flex;
     align-items: center;
@@ -474,8 +400,8 @@ body {
 }
 
 .badge-aprobada {
-    background-color: #dceee3;
-    color: #23734e;
+    background-color: #e2f0e5;
+    color: #39734f;
     padding: 7px 12px;
     border-radius: 20px;
     font-size: 10px;
@@ -483,32 +409,32 @@ body {
 }
 
 .btn-detalles {
-    background-color: #164e3b;
+    background-color: #285b45;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    border-radius: 6px;
+    border-radius: 7px;
     font-size: 12px;
     transition: 0.3s;
 }
 
 .btn-detalles:hover {
-    background-color: #23734e;
+    background-color: #1d4534;
 }
 
 /* =========================================
-   10. PIE DE PÁGINA
+   9. PIE DE PÁGINA
 ========================================= */
 
 .pie-pagina {
     background-color: white;
     border-top: 1px solid #e5ebe7;
-    padding: 25px 45px;
+    padding: 25px 35px;
     text-align: center;
 }
 
 .footer-logo-texto {
-    color: #164e3b;
+    color: #285b45;
     font-size: 20px;
     font-weight: bold;
 }
@@ -517,94 +443,4 @@ body {
     color: #87938b;
     font-size: 12px;
     margin-top: 8px;
-}
-
-/* =========================================
-   11. DISEÑO RESPONSIVE
-========================================= */
-
-/* Tablets */
-
-@media (max-width: 1000px) {
-
-    .grid-oportunidades {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .seccion-bienvenida {
-        flex-wrap: wrap;
-    }
-
-}
-
-/* Celulares */
-
-@media (max-width: 650px) {
-
-    .menu-lateral {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .menu-lateral-body {
-        margin-top: 25px;
-    }
-
-    .menu-lateral-footer {
-        margin-top: 20px;
-    }
-
-    .contenedor-derecho {
-        margin-left: 0;
-    }
-
-    .barra-usuario {
-        padding: 15px 20px;
-        height: auto;
-    }
-
-    .main {
-        padding: 25px 18px;
-    }
-
-    .seccion-bienvenida {
-        padding: 25px 20px;
-    }
-
-    .bienvenida-texto h1 {
-        font-size: 25px;
-    }
-
-    .tarjeta-horas {
-        width: 100%;
-    }
-
-    .seccion-header {
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .seccion-header h2 {
-        font-size: 21px;
-    }
-
-    .grid-oportunidades {
-        grid-template-columns: 1fr;
-    }
-
-    .tarjeta-actividad {
-        flex-wrap: wrap;
-    }
-
-    .actividad-estado {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .pie-pagina {
-        padding: 25px 15px;
-    }
-
 }
