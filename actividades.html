@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oportunidades de voluntariado en Costa Rica">
     <title>ConectaCR - Oportunidades</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/actividades.css">
@@ -15,34 +16,28 @@
 
         <a href="indexconecta.html" class="logo">ConectaCR</a>
 
-        <nav class="nav-principal">
+        <nav class="nav-principal" aria-label="Menú principal">
             <ul>
                 <li><a href="indexconecta.html">Inicio</a></li>
                 <li><a href="actividades.html" class="active" aria-current="page">Actividades</a></li>
-                <li>
-                    <a href="inscripcion.html"> Inscripción</a>
-                </li>
+                <li><a href="inscripcion.html"> Inscripción</a></li>
+            </ul>
         </nav>
 
         <div class="encabezado-usuario">
-
             <div class="perfil-usuario">
                 <span class="avatar">VS</span>
-
                 <div class="usuario-info">
                     <p class="nombre">Valeria Soto</p>
                     <p class="rol">Voluntaria</p>
                 </div>
             </div>
-
             <a href="login.html" class="logout">Cerrar sesión</a>
-
         </div>
 
     </header>
 
     <main class="contenido-principal">
-
 
         <header class="explorar-header">
             <span class="tagline">EXPLORAR</span>
@@ -50,169 +45,14 @@
             <p>Actividades publicadas por organizaciones verificadas de Costa Rica.</p>
         </header>
 
-        <nav id="barra-filtros" class="barra-filtros">
-            <button type="button" class="btn-filtro active" data-categoria="todas">Todas</button>
-        </nav>
+        <div id="barra-filtros" class="barra-filtros" role="group" aria-label="Filtrar por categoría">
+            <!-- Los botones se generan desde actividades.js -->
+        </div>
 
+        <h2 class="sr-only">Lista de actividades</h2>
 
         <div id="grid-actividades" class="malla-actividades">
-
-            <article class="tarjeta-actividad">
-
-
-                <div class="tarjeta-imagen-wrapper">
-                    <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                    <span class="categoria-badge">AMBIENTE</span>
-                </div>
-
-                <div class="tarjeta-info-wrapper">
-                    <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                    <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                    <div class="actividad-detalles-meta">
-                        <p class="detalle-item">Puntarenas</p>
-                        <p class="detalle-item">18 oct, 7:00 a. m.</p>
-                    </div>
-
-                    <hr class="linea-divisoria">
-                    <div class="tarjeta-footer-fila">
-                        <span class="cupos-info">8 cupos</span>
-                        <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="tarjeta-actividad">
-
-
-                <div class="tarjeta-imagen-wrapper">
-                    <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                    <span class="categoria-badge">AMBIENTE</span>
-                </div>
-
-                <div class="tarjeta-info-wrapper">
-                    <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                    <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                    <div class="actividad-detalles-meta">
-                        <p class="detalle-item">Puntarenas</p>
-                        <p class="detalle-item">18 oct, 7:00 a. m.</p>
-                    </div>
-
-                    <hr class="linea-divisoria">
-                    <div class="tarjeta-footer-fila">
-                        <span class="cupos-info">8 cupos</span>
-                        <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="tarjeta-actividad">
-
-
-                <div class="tarjeta-imagen-wrapper">
-                    <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                    <span class="categoria-badge">AMBIENTE</span>
-                </div>
-
-                <div class="tarjeta-info-wrapper">
-                    <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                    <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                    <div class="actividad-detalles-meta">
-                        <p class="detalle-item">Puntarenas</p>
-                        <p class="detalle-item">18 oct, 7:00 a. m.</p>
-                    </div>
-
-                    <hr class="linea-divisoria">
-                    <div class="tarjeta-footer-fila">
-                        <span class="cupos-info">8 cupos</span>
-                        <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="tarjeta-actividad">
-
-
-                <div class="tarjeta-imagen-wrapper">
-                    <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                    <span class="categoria-badge">AMBIENTE</span>
-                </div>
-
-                <div class="tarjeta-info-wrapper">
-                    <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                    <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                    <div class="actividad-detalles-meta">
-                        <p class="detalle-item">Puntarenas</p>
-                        <p class="detalle-item">18 oct, 7:00 a. m.</p>
-                    </div>
-
-                    <hr class="linea-divisoria">
-                    <div class="tarjeta-footer-fila">
-                        <span class="cupos-info">8 cupos</span>
-                        <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="tarjeta-actividad">
-
-
-                <div class="tarjeta-imagen-wrapper">
-                    <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                    <span class="categoria-badge">AMBIENTE</span>
-                </div>
-
-                <div class="tarjeta-info-wrapper">
-                    <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                    <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                    <div class="actividad-detalles-meta">
-                        <p class="detalle-item">Puntarenas</p>
-                        <p class="detalle-item">18 oct, 7:00 a. m.</p>
-                    </div>
-
-                    <hr class="linea-divisoria">
-                    <div class="tarjeta-footer-fila">
-                        <span class="cupos-info">8 cupos</span>
-                        <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="tarjeta-actividad">
-
-
-                <div class="tarjeta-imagen-wrapper">
-                    <img src="img/puntarenas.jpg" alt="Playa y vegetación en Puntarenas">
-                    <span class="categoria-badge">AMBIENTE</span>
-                </div>
-
-                <div class="tarjeta-info-wrapper">
-                    <span class="organizacion-nombre">FUNDACIÓN MARVIVA</span>
-                    <h3 class="actividad-titulo">Restauración del manglar</h3>
-
-                    <div class="actividad-detalles-meta">
-                        <p class="detalle-item">Puntarenas</p>
-                        <p class="detalle-item">18 oct, 7:00 a. m.</p>
-                    </div>
-
-                    <hr class="linea-divisoria">
-                    <div class="tarjeta-footer-fila">
-                        <span class="cupos-info">8 cupos</span>
-                        <a href="actividades.html" class="link-ver-actividad">Ver actividad</a>
-                    </div>
-                </div>
-
-            </article>
-
+            <!-- Las tarjetas se generan desde actividades.js -->
         </div>
 
     </main>
@@ -224,7 +64,7 @@
         <p class="footer-descripcion">Diseñado para conectar personas con causas que transforman Costa Rica.</p>
     </footer>
 
-    </div>
+    <script src="js/actividades.js"></script>
 
 </body>
 
