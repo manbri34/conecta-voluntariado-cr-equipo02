@@ -15,6 +15,12 @@ body {
     line-height: 1.5;
 }
 
+:focus-visible {
+    outline: 3px solid #021a51;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px #9bc6a8;
+}
+
 /* =========================================
    2. ENCABEZADO Y MENÚ SUPERIOR
 ========================================= */
@@ -443,4 +449,50 @@ body {
     color: #87938b;
     font-size: 12px;
     margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+    .grid-actividades {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado-principal {
+        padding: 12px 18px;
+    }
+
+    .main,
+    .contenido-principal {
+        padding: 28px 18px;
+    }
+
+    .seccion-bienvenida {
+        padding: 24px;
+    }
+
+    .bienvenida-texto h1,
+    .explorar-header h1 {
+        font-size: 26px;
+    }
+
+    .grid-actividades {
+        grid-template-columns: 1fr;
+    }
+
+    .pie-pagina {
+        padding: 22px 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+
+    .tarjeta-actividad:hover,
+    .btn-explorar:hover,
+    .btn-secundario:hover {
+        transform: none;
+    }
 }

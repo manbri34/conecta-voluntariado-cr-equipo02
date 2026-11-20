@@ -220,3 +220,21 @@ body {
 .pie-pagina {
     margin-top: 20px;
 }
+
+@media (max-width: 600px) {
+    .seccion-inscripcion {
+        padding: 18px;
+    }
+
+    .seccion-inscripcion fieldset {
+        padding: 16px;
+    }
+
+    .formulario-acciones {
+        justify-content: stretch;
+    }
+
+    #btnRegistrar {
+        width: 100%;
+    }
+}
