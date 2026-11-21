@@ -92,54 +92,41 @@ function crearElemento(etiqueta, clase, texto) {
     return elemento;
 }
 
-// TEMPORAL: es la misma tarjeta de indexconecta.js. puede ir a main.js si lo creamos para no duplicarla
+// TEMPORAL: es la misma tarjeta de indexconecta.js. Puede ir a main.js para no duplicarla
+// Devuelve el HTML de una tarjeta como texto (template literal)
 function crearTarjetaActividad(actividad) {
-    const tarjeta = crearElemento('article', 'tarjeta-actividad');
-    tarjeta.dataset.id = actividad.id;
-    if (actividad.cuposDisponibles === 0) {
-        tarjeta.classList.add('tarjeta-actividad--llena');
-    }
+    const claseLlena = actividad.cuposDisponibles === 0 ? 'tarjeta-actividad--llena' : '';
 
-    // Bloque de imagen
-    const wrapperImagen = crearElemento('div', 'tarjeta-imagen-wrapper');
-    if (actividad.imagen) {
-        const img = document.createElement('img');
-        img.src = actividad.imagen;
-        img.alt = '';            // decorativa: el título ya describe la actividad
-        img.loading = 'lazy';
-        wrapperImagen.append(img);
-    }
-    wrapperImagen.append(crearElemento('span', 'categoria-badge', actividad.categoria));
+    const imagen = actividad.imagen
+        ? `<img src="${actividad.imagen}" alt="" loading="lazy">`
+        : '';
 
-    // Bloque de información
-    const wrapperInfo = crearElemento('div', 'tarjeta-info-wrapper');
-    if (actividad.organizacion) {
-        wrapperInfo.append(crearElemento('span', 'organizacion-nombre', actividad.organizacion));
-    }
-    wrapperInfo.append(crearElemento('h3', 'actividad-titulo', actividad.nombre));
+    const organizacion = actividad.organizacion
+        ? `<span class="organizacion-nombre">${actividad.organizacion}</span>`
+        : '';
 
-    // Ubicación y fecha
-    const meta = crearElemento('div', 'actividad-detalles-meta');
-    meta.append(
-        crearElemento('p', 'detalle-item', actividad.ubicacion),
-        crearElemento('p', 'detalle-item', formatearFecha(actividad.fecha))
-    );
-
-    // Enlace
-    const enlace = crearElemento('a', 'link-ver-actividad', 'Ver actividad');
-    enlace.href = `actividades.html?id=${actividad.id}`;
-    enlace.setAttribute('aria-label', `Ver actividad: ${actividad.nombre}`);
-
-    // Cupos y enlace
-    const fila = crearElemento('div', 'tarjeta-footer-fila');
-    fila.append(
-        crearElemento('span', 'cupos-info', textoCupos(actividad.cuposDisponibles)),
-        enlace
-    );
-
-    wrapperInfo.append(meta, crearElemento('hr', 'linea-divisoria'), fila);
-    tarjeta.append(wrapperImagen, wrapperInfo);
-    return tarjeta;
+    return `
+        <article class="tarjeta-actividad ${claseLlena}" data-id="${actividad.id}">
+            <div class="tarjeta-imagen-wrapper">
+                ${imagen}
+                <span class="categoria-badge">${actividad.categoria}</span>
+            </div>
+            <div class="tarjeta-info-wrapper">
+                ${organizacion}
+                <h3 class="actividad-titulo">${actividad.nombre}</h3>
+                <div class="actividad-detalles-meta">
+                    <p class="detalle-item">${actividad.ubicacion}</p>
+                    <p class="detalle-item">${formatearFecha(actividad.fecha)}</p>
+                </div>
+                <hr class="linea-divisoria">
+                <div class="tarjeta-footer-fila">
+                    <span class="cupos-info">${textoCupos(actividad.cuposDisponibles)}</span>
+                    <a href="actividades.html?id=${actividad.id}" class="link-ver-actividad"
+                       aria-label="Ver actividad: ${actividad.nombre}">Ver actividad</a>
+                </div>
+            </div>
+        </article>
+    `;
 }
 
 // Filtros
@@ -177,12 +164,13 @@ function renderActividades(actividades) {
         renderMensaje('No hay actividades en esta categoría por ahora.');
         return;
     }
-    const tarjetas = actividades.map(actividad => crearTarjetaActividad(actividad));
-    elGridActividades.replaceChildren(...tarjetas);
+    elGridActividades.innerHTML = actividades
+        .map(actividad => crearTarjetaActividad(actividad))
+        .join('');
 }
 
 function renderMensaje(texto) {
-    elGridActividades.replaceChildren(crearElemento('p', 'mensaje-estado', texto));
+    elGridActividades.innerHTML = `<p class="mensaje-estado">${texto}</p>`;
 }
 
 // Llega desde inicio con ?id= → scroll a la tarjeta y resaltarla
