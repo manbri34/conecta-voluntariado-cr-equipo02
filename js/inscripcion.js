@@ -2,7 +2,7 @@
 "use strict";
 
 const titulo = document.querySelector('#titulo');
-titulo.textContent = "Nueva Inscripcion";
+titulo.textContent = "Nueva Inscripción";
 
 const formulario = document.querySelector('#form-inscripcion');
 const selectActividad = document.querySelector('#actividad');
@@ -18,7 +18,7 @@ let actividades = [];
 
 selectActividad.addEventListener('change', () => {
 
-    console.log('La actividad cambio');
+    console.log('La actividad cambió');
 });
 
 formulario.addEventListener('submit', event => {
